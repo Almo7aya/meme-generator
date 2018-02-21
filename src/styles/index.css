@@ -64,6 +64,10 @@ body {
     }
 }
 
+.my-meme {
+    display: inline-block;
+}
+
 .my-meme-img {
     width: 220px;
     object-fit: cover;
