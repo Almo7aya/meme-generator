@@ -1,7 +1,6 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
-  "private": true,
+  "name": "meme-generator",
+  "version": "0.9.0",
   "dependencies": {
     "react": "^15.5.4",
     "react-bootstrap": "^0.32.1",
