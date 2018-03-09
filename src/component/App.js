@@ -33,24 +33,26 @@ class App extends Component {
         <FormGroup>
           <ControlLabel>Top:</ControlLabel>
           {" "}
-          <FormControl type="text" onChange={ event => this.setState({ text0: event.target.value }) } />
+          <FormControl type="text" onChange={event => this.setState({ text0: event.target.value })} />
         </FormGroup>
-          {" "}
+        {" "}
         <FormGroup>
           <ControlLabel>Bottom:</ControlLabel>
           {" "}
-          <FormControl type="text" onChange={ event => this.setState({ text1: event.target.value }) } />
+          <FormControl type="text" onChange={event => this.setState({ text1: event.target.value })} />          <ControlLabel>Bottom:</ControlLabel>
+          {" "}
+          <FormControl type="text" onChange={event => this.setState({ text1: event.target.value })} />
         </FormGroup>
       </Form>
 
       {
         this.props.memes.slice(0, this.state.memeLimit).map((meme, index) => {
-          return (<MemeItem 
+          return (<MemeItem
             key={index}
             meme={meme}
-            text0={ this.state.text0 }
-            text1={ this.state.text1 }
-            />);
+            text0={this.state.text0}
+            text1={this.state.text1}
+          />);
         })
       }
 
